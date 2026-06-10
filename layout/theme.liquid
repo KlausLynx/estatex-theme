@@ -131,6 +131,15 @@
 
     {% render 'search-modal' %}
 
+    <script>
+      window.__estatex = {
+        currency: {{ shop.money_format | json }},
+        shopName: {{ shop.name | json }},
+        template: {{ template | json }},
+      }
+    </script>
+    <script src="" id="estatex-bundle" defer></script>
+
     {% if settings.quick_add or settings.mobile_quick_add %}
       {% render 'quick-add-modal' %}
     {% endif %}
