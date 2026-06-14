@@ -1,0 +1,75 @@
+<section class="estatex-stats">
+  <div class="estatex-stats__container">
+
+    <div class="estatex-stats__item">
+      <span class="estatex-stats__number">5+</span>
+      <span class="estatex-stats__label">Years in Lagos</span>
+    </div>
+
+    <div class="estatex-stats__item">
+      <span class="estatex-stats__number">₦50B+</span>
+      <span class="estatex-stats__label">Property Value Sold</span>
+    </div>
+
+    <div class="estatex-stats__item">
+      <span class="estatex-stats__number">30+</span>
+      <span class="estatex-stats__label">Active Listings</span>
+    </div>
+
+    <div class="estatex-stats__item">
+      <span class="estatex-stats__number">500+</span>
+      <span class="estatex-stats__label">Happy Clients</span>
+    </div>
+
+  </div>
+</section>
+
+<style>
+    /* Stats section */
+.estatex-stats {
+  background: var(--estatex-navy);
+  padding: 60px 40px;
+}
+
+.estatex-stats__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.estatex-stats__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.estatex-stats__number {
+  font-family: var(--estatex-font-display);
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 700;
+  color: var(--estatex-gold);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.estatex-stats__label {
+  font-family: var(--estatex-font-body);
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--estatex-white);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* Mobile */
+@media screen and (max-width: 749px) {
+  .estatex-stats__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+}
+</style>
